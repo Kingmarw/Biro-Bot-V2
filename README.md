@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🚀 BIRO BOT V1
+# 🚀 BIRO BOT V2
 **Ultra-Crash Protocol Engine for WhatsApp**
 
   <p>
@@ -43,7 +43,7 @@ pkg install python git -y
 git clone https://github.com/Kingmarw/Biro-Bot-V7.git
 
 # Navigate to the project directory
-cd Biro-Bot-V7
+cd Biro-Bot-V2
 
 # Install the required Python libraries
 pip install -r requirements.txt
@@ -58,7 +58,7 @@ python main.py
 git clone https://github.com/Kingmarw/Biro-Bot-V7.git
 
 # Navigate to the project directory
-cd Biro-Bot-V7
+cd Biro-Bot-V2
 
 # Install dependencies (Requires pip)
 pip install -r requirements.txt
@@ -78,7 +78,7 @@ python main.py
 git clone https://github.com/Kingmarw/Biro-Bot-V7.git
 
 # Enter the directory
-cd Biro-Bot-V7
+cd Biro-Bot-V2
 
 # Install requirements
 pip install -r requirements.txt
