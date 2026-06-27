@@ -32,7 +32,7 @@ def show_banner():
     ██╔══██╗██║██╔══██╗██║   ██║    ██╔══██╗██║   ██║   ██║   
     ██████╔╝██║██║  ██║╚██████╔╝    ██████╔╝╚██████╔╝   ██║   
     ╚═════╝ ╚═╝╚═╝  ╚═╝ ╚═════╝     ╚═════╝  ╚═════╝    ╚═╝   
-                                {Colors.CYAN}--- VERSION 7.0 ---{Colors.RED}
+                                {Colors.CYAN}--- VERSION 2.0 ---{Colors.RED}
                                 
     {Colors.YELLOW}>> Status: Multi-Platform (Linux / Termux / Win)
     >> Engine: Selenium Ultra-Crash Protocol
