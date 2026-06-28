@@ -6,7 +6,7 @@
   <p>
     <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python" alt="Python">
     <img src="https://img.shields.io/badge/Selenium-Automation-green?style=for-the-badge&logo=selenium" alt="Selenium">
-    <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20Termux-lightgrey?style=for-the-badge" alt="Platforms">
+    <img src="https://img.shields.io/badge/Platform-Windows%20%2C%20Linux%20%7C%20Termux-lightgrey?style=for-the-badge" alt="Platforms">
   </p>
 </div>
 
@@ -40,7 +40,7 @@ pkg update && pkg upgrade -y
 pkg install python git -y
 
 # Clone the repository
-git clone https://github.com/Kingmarw/Biro-Bot-V7.git
+git clone https://github.com/Kingmarw/Biro-Bot-V2.git
 
 # Navigate to the project directory
 cd Biro-Bot-V2
@@ -55,7 +55,7 @@ python main.py
 **Open your terminal and run:**
 ```bash
 # Clone the repository
-git clone https://github.com/Kingmarw/Biro-Bot-V7.git
+git clone https://github.com/Kingmarw/Biro-Bot-V2.git
 
 # Navigate to the project directory
 cd Biro-Bot-V2
@@ -75,7 +75,7 @@ python main.py
 3.Open CMD or PowerShell and execute:
 ```bash
 # Clone the repo
-git clone https://github.com/Kingmarw/Biro-Bot-V7.git
+git clone https://github.com/Kingmarw/Biro-Bot-V2.git
 
 # Enter the directory
 cd Biro-Bot-V2
